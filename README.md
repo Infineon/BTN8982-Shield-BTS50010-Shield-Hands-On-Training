@@ -132,10 +132,14 @@ You take full responsibility if you choose to put anything on the end of the mot
 ##### Let’s write some code
 * What do we need... not a lot since we will use uC-Probe to control the system
 * Some global variables for PWM duty cycle and to store ADC readings 
+```
     volatile int32_t PWM_DutyCycle_IN_1 = 0; 
     volatile int32_t PWM_DutyCycle_IN_2 = 0;
     volatile XMC_VADC_RESULT_SIZE_t ADC_IS_1 = 0;
+```
 * Some code to set the values...
+```
     PWM_CCU4_SetDutyCycle(&IN_1, PWM_DutyCycle_IN_1);
     PWM_SetDutyCycle(&IN_2, PWM_DutyCycle_IN_2);
     ADC_IS_1 = ADC_MEASUREMENT_GetGlobalResult();
+```
