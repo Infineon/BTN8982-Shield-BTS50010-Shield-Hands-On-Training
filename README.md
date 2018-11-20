@@ -173,3 +173,130 @@ You take full responsibility if you choose to put anything on the end of the mot
 ##### Configure the slider (0000 to 10000 are correct range for Duty Cycle)
 ![Configure the slider](https://github.com/Infineon/Assets/blob/master/Pictures/Configure%20the%20slider.png)
 ##### Name (Drag text box and edit it)
+![Name (Drag text and edit it)](https://github.com/Infineon/Assets/blob/master/Pictures/Name%20%20(Drag%20text%20and%20edit%20it).png)
+##### Assign the Duty Cycle Variable to it (Drag and Drop over slider)
+![Assign the Duty Cycle Variable](https://github.com/Infineon/Assets/blob/master/Pictures/Assign%20the%20Duty%20Cycle%20Variable.png)
+##### Add cool meter for Duty Cycle IN_1
+![Add cool meter for Duty Cycle IN_1.2](https://github.com/Infineon/Assets/blob/master/Pictures/Add%20cool%20meter%20for%20Duty%20Cycle%20IN_1.2.png)
+##### Repeat for Duty Cycle IN_2 (Copy widgets from IN_1, drag new Variable)
+![Add cool meter for Duty Cycle IN_2](https://github.com/Infineon/Assets/blob/master/Pictures/Add%20cool%20meter%20for%20Duty%20Cycle%20IN_2.png)
+##### Run uC Probe (be sure DAVE Debug code is running)
+![Run uC Probe.2](https://github.com/Infineon/Assets/blob/master/Pictures/Run%20uC%20Probe.2.png)
+##### Left slider = Forward 
+##### Right slider = Reverse
+![Left slider = Forward Right slider = Reverse](https://github.com/Infineon/Assets/blob/master/Pictures/Left%20slider%20%3D%20Forward%20Right%20slider%20%3D%20Reverse.png)
+##### Add graph for IS_1 Signal (resize to fit)
+![Add graph for IS_1 signal](https://github.com/Infineon/Assets/blob/master/Pictures/Add%20graph%20for%20IS_1%20signal.png)
+##### Should look something like this... (Do not forget to save)
+![Pattern](https://github.com/Infineon/Assets/blob/master/Pictures/Pattern.png)
+##### What´s up with the IS_1 singal???
+* If you look at the truth table...
+![Truth Table_IS_1 signal](https://github.com/Infineon/Assets/blob/master/Pictures/Truth%20Table_IS_1%20signal.png)
+* So only valid reading when HSS FET is high otherwise it’s an offset(Diagnostics)
+* Currently code just continuously makes IS_1 ADC conversion and is displaying in uC-Probe…
+* Note if you run in reverse (PWM IN_2) the HSS_1 never goes high and IS_1 signal is steady = offset
+##### How can we make our code smarter???
+* Let´s try to trigger the ADC when IN_1 is High during the PWM 
+* Good thing we used the PWM_CCU4 App for IN_1 signal, as it seems to be a little more feature rich than the PWM App
+* Basically we will wire our existing DAVE Apps to accomplish this and we should not have to change our C code at all
+  * I.e. we will only make an ADC during the high time of the IN_1 PWM Signal… **{Correction, we read ADC at period match, if duty cycle     is 0 or low it will still take reading}**
+  * We will only make changes to the Apps configuration
+  * We will need to generate the new App code and rebuild
+##### Modify the ADC (Stop the debugger, click DAVE CE perspective)
+![Modify ADC](https://github.com/Infineon/Assets/blob/master/Pictures/Modify%20ADC.png)
+##### Modify PWM_CCU4 IN_1
+![Modify PWM_CCU4 IN_1](https://github.com/Infineon/Assets/blob/master/Pictures/Modify%20PWM_CCU4%20IN_1.png)
+![Modify PWM_CCU4 IN_1_2](https://github.com/Infineon/Assets/blob/master/Pictures/Modify%20PWM_CCU4%20IN_1_2.png)
+##### Connect HW Signals (Right Click)
+![Connect HW Signals](https://github.com/Infineon/Assets/blob/master/Pictures/Connect%20HW%20Signals.png)
+##### Configure IN_1
+![Configure IN_1](https://github.com/Infineon/Assets/blob/master/Pictures/Configure%20IN_1.png)
+##### Generate Code and Build; run Probe 
+![Generate Code and Build](https://github.com/Infineon/Assets/blob/master/Pictures/Generate%20Code%20and%20Build.png)
+### BTS50010 Shield Project
+#### Hardware Overview 
+* XMC1100 Boot Kit
+* BTS50010 Arduino Shield 
+* 12V Power Supply 
+* USB Cable 
+* Automotive 12V Bulb 
+* Power Sequence 
+  * Connect Shield to Boot Kit
+  * Connect Bulb to LOAD and GND
+  * Power XMC Boot Kit through micro USB cable
+  * Program XMC Boot Kit (through DAVE/Arduino)
+  * Connect 12V GND to Shield GND 
+  * Connect 12V Power to Shield VBAT 
+  * Turn on supply (aka plug in supply)
+![Hardware Overview BTS50010](https://github.com/Infineon/Assets/blob/master/Pictures/Hardware%20Overview%20BTS50010.png)
+##### XMC1100 Boot Kit Pin Discriptions 
+![XMC1100 Boot Kit Pin Descriptions](https://github.com/Infineon/Assets/blob/master/Pictures/XMC1100%20Boot%20Kit%20Pin%20Descriptions.jpg)
+##### BTS50010 Shield Overview
+![BTS 50010 Shield Overview](https://github.com/Infineon/Assets/blob/master/Pictures/BTS%2050010%20Shield%20Overview.png)
+##### BTS50010 Pin Descriptions 
+![BTS50010 Pin Descriptions](https://github.com/Infineon/Assets/blob/master/Pictures/BTS50010%20Pin%20Descriptions.png)
+#### Arduino Blinky Bulb Demonstration
+##### Arduino Blinky Bulb Demo
+* Open Blinky Bulb Demo Sketch 
+  * [your path]\Avnet FAE Training 10-10-2018\Arduino Workspace\bts50010 Shield Sketches\BTS500010_Automotive_Bulb
+* Connect Shield to Boot Kit
+* Connect Shield to LOAD and GND
+* Connect Bulb to LOAD and GND
+* Power XMC Kit through micro-USB cable
+* Program XMC Boot Kit (Arduino)
+  * Make sure XMC1100 Boot Kit and COM set correctly 
+* Upload sketch
+* LED1 and LED2 should alternate
+* Apply 12V Power (GND first) to Shield 
+* Bulb should turn on and off 
+* **WARNING: Bulb will get hot!!!**
+##### Blinky Blub Code
+![Blinky Bulb Code](https://github.com/Infineon/Assets/blob/master/Pictures/Blinky%20Bulb%20Code.png)
+#### DAVE4 CE Project
+##### BTS50010 Shield DAVE Project
+* Exercise 1:
+  * Create new DAVE CE Project 
+  * Target XMC1100 Boot Kit w/BTS50010 Shield
+  * Use DAVE Apps to turn on/off bulb with uC-Probe Switch
+* Hint: Can create a switch variable, and then check if switch is high or low to call appropriate DAVE I/O app method; assign the switch   variable to a uc-Probe widget
+* Advanced Exercise 2 & 3:
+  * Make Bulb Blink like in Arduino Demo
+* Hint 1: PROFET PWM max speed is 100Hz; for bulb, shoot for on/off time in seconds range 
+* Hint 2: or use systimer 
+##### Exercise 1 (Cheat Sheet)
+* Create new DAVE CE Project 
+* Drop DIGITAL_IO App
+  * Configure as Output
+  * Rename it to "IN_BTS50010"
+  * Set initial level to 0
+* Map Pin to correct I/O Pin
+  * Hint: It is P0.3
+* Create a volatile int called light_switch default = 0
+  * volatile int32_t light_switch = 0;
+* Create C-Code logic in the while{1U} loop
+  * If (light_switch == 0) then {turn off bulb} else {turn on bulb}
+* Call DIGITAL_IO Methods for turning on I/O
+  * DIGITAL_IO_SetOutputHigh(&IN_BTS50010);
+  * DIGITAL_IO_SetOutputLow(&IN_BTS50010);
+* Generate  DAVE Code then compile your code then run debugger 
+* Launch Probe; point to new .elf file 
+  * Drop widget with values 1 or 0; (Toggle)
+  * Drag light_switch variable to widget 
+  * Should be good to go
+##### Exercise 2 (Cheat Sheet)
+* Create new DAVE CE Project 
+* Drop PWM App
+  * Configure as Output 
+  * Rename it to "IN_BTS50010"
+  * Set frequency to min 1Hz or something you can see
+  * Set Duty Cycle to 50% (more or less to your preference)
+  * Start on initialization
+* Map Pin to correct I/O Pin
+  * Hint: It is P0.3
+* Should not need C-Code 
+* Generate DAVE Code then compile your Code then run debugger 
+* Bulb should be blinking; but fast
+##### Exercise 3 (Cheat Sheet)
+* Setup DIGIT_IO pin as in the other examples 
+* Use SYSTIMER to create a 1 or 2 second timer
+* See `usage´ from DAVE App Help for SYSTIMER for cheat codes 
