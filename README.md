@@ -228,14 +228,23 @@ You take full responsibility if you choose to put anything on the end of the mot
   * Connect 12V GND to Shield GND 
   * Connect 12V Power to Shield VBAT 
   * Turn on supply (aka plug in supply)
+  
 ![Hardware Overview BTS50010](https://github.com/Infineon/Assets/blob/master/Pictures/Hardware%20Overview%20BTS50010.png)
+
 ##### XMC1100 Boot Kit Pin Discriptions 
+
 ![XMC1100 Boot Kit Pin Descriptions](https://github.com/Infineon/Assets/blob/master/Pictures/XMC1100%20Boot%20Kit%20Pin%20Descriptions.jpg)
+
 ##### BTS50010 Shield Overview
+
 ![BTS 50010 Shield Overview](https://github.com/Infineon/Assets/blob/master/Pictures/BTS%2050010%20Shield%20Overview.png)
+
 ##### BTS50010 Pin Descriptions 
+
 ![BTS50010 Pin Descriptions](https://github.com/Infineon/Assets/blob/master/Pictures/BTS50010%20Pin%20Descriptions.png)
+
 #### Arduino Blinky Bulb Demonstration
+
 ##### Arduino Blinky Bulb Demo
 * Open Blinky Bulb Demo Sketch 
   * [your path]\Avnet FAE Training 10-10-2018\Arduino Workspace\bts50010 Shield Sketches\BTS500010_Automotive_Bulb
@@ -250,10 +259,14 @@ You take full responsibility if you choose to put anything on the end of the mot
 * Apply 12V Power (GND first) to Shield 
 * Bulb should turn on and off 
 * **WARNING: Bulb will get hot!!!**
+
 ##### Blinky Blub Code
 ![Blinky Bulb Code](https://github.com/Infineon/Assets/blob/master/Pictures/Blinky%20Bulb%20Code.png)
+
 #### DAVE4 CE Project
+
 ##### BTS50010 Shield DAVE Project
+
 * Exercise 1:
   * Create new DAVE CE Project 
   * Target XMC1100 Boot Kit w/BTS50010 Shield
@@ -263,7 +276,9 @@ You take full responsibility if you choose to put anything on the end of the mot
   * Make Bulb Blink like in Arduino Demo
 * Hint 1: PROFET PWM max speed is 100Hz; for bulb, shoot for on/off time in seconds range 
 * Hint 2: or use systimer 
+
 ##### Exercise 1 (Cheat Sheet)
+
 * Create new DAVE CE Project 
 * Drop DIGITAL_IO App
   * Configure as Output
@@ -283,7 +298,9 @@ You take full responsibility if you choose to put anything on the end of the mot
   * Drop widget with values 1 or 0; (Toggle)
   * Drag light_switch variable to widget 
   * Should be good to go
+
 ##### Exercise 2 (Cheat Sheet)
+
 * Create new DAVE CE Project 
 * Drop PWM App
   * Configure as Output 
@@ -296,7 +313,9 @@ You take full responsibility if you choose to put anything on the end of the mot
 * Should not need C-Code 
 * Generate DAVE Code then compile your Code then run debugger 
 * Bulb should be blinking; but fast
+
 ##### Exercise 3 (Cheat Sheet)
+
 * Setup DIGIT_IO pin as in the other examples 
 * Use SYSTIMER to create a 1 or 2 second timer
 * See `usage´ from DAVE App Help for SYSTIMER for cheat codes 
