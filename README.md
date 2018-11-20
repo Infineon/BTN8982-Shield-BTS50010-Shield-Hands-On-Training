@@ -72,7 +72,7 @@ You take full responsibility if you choose to put anything on the end of the mot
 ##### If all was successful go to DAVE IDE and Project…
 ![Ready to go IDE and Project](https://github.com/Infineon/Assets/blob/master/Pictures/Ready%20to%20go%20IDE%20and%20Project.png)
 ##### Closer look at the tool bar…
-![Tool bar](https://github.com/Infineon/Assets/blob/master/Pictures/Tool%20bar.png)
+![Tool bar.2](https://github.com/Infineon/Assets/blob/master/Pictures/Tool%20bar.2.png)
 ##### So what are we trying to do…
 * Essentially we have four pins to control
 * For each half bridge (BTN8982)
@@ -80,7 +80,7 @@ You take full responsibility if you choose to put anything on the end of the mot
   * We can toggle the IN_x pin
 * We can also monitor the current in each half bridge 
   * IS_x Current Sense or Diagnostics 
-![Pin definitions and functions](https://github.com/Infineon/Assets/blob/master/Pictures/Pin%20defintions%20and%20functions.png)
+![Pin definitions and functions.2](https://github.com/Infineon/Assets/blob/master/Pictures/Pin%20defintions%20and%20functions.2.png)
 ##### BTN8982 Truth Table…
 * So if INH_x = 0 then half bridge is off; if it = 1 then IN_x toggles which FET (LSS or HSS) is active 
 * In_x = 0; LSS is active 
@@ -100,7 +100,7 @@ You take full responsibility if you choose to put anything on the end of the mot
 ##### Setup DAVE App for INH_1
 ![Setup DAVE App for INH_1.2](https://github.com/Infineon/Assets/blob/master/Pictures/Setup%20DAVE%20App%20for%20INH_1.2.png)
 ##### Should see DIGITAL_IO App…double click it
-![DIGITAL_IO App](https://github.com/Infineon/Assets/blob/master/Pictures/DIGITIAL_IO%20App.png)
+![DIGITAL_IO App](https://github.com/Infineon/Assets/blob/master/Pictures/DIGITAL_IO%20App.png)
 ##### Change name by right clicking app…
 ![Change Name](https://github.com/Infineon/Assets/blob/master/Pictures/Change%20Name.png)
 ![Change Name_2](https://github.com/Infineon/Assets/blob/master/Pictures/Change%20Name_2.png)
@@ -118,14 +118,14 @@ You take full responsibility if you choose to put anything on the end of the mot
 ![Configure App and Rename to IN_1](https://github.com/Infineon/Assets/blob/master/Pictures/Configure%20App%20and%20Rename%20to%20IN_1.png)
 ![Configure App and Rename to IN_1_2](https://github.com/Infineon/Assets/blob/master/Pictures/Configure%20App%20and%20Rename%20to%20IN_1_2.png)
 ##### Setup PWM for IN_2 - Using other PWM Function
-![Setup PWM for IN_2](https://github.com/Infineon/Assets/blob/master/Pictures/Setup%20PWM%20for%20IN_2.png)
+![Setup PWM for IN_2.4](https://github.com/Infineon/Assets/blob/master/Pictures/Setup%20PWM%20for%20IN_2.4.png)
 ##### Configure App and rename to IN_2
-![Configure App and Rename to IN_2](https://github.com/Infineon/Assets/blob/master/Pictures/Configure%20App%20and%20Rename%20to%20IN_2.png)
-![Configure App and Rename to IN_2_2](https://github.com/Infineon/Assets/blob/master/Pictures/Configure%20App%20and%20Rename%20to%20IN_2_2.png)
+![Configure App and Rename to IN_2.3](https://github.com/Infineon/Assets/blob/master/Pictures/Configure%20App%20and%20Rename%20to%20IN_2.3.png)
+![Configure App and Rename to IN_2_2.4](https://github.com/Infineon/Assets/blob/master/Pictures/Configure%20App%20and%20Rename%20to%20IN_2_2.4.png)
 ##### Rearrange apps (not required)
 ![Rearrange Apps](https://github.com/Infineon/Assets/blob/master/Pictures/Rearrange%20Apps.png)
-##### Let’s add and ADC measurement for IS_1
-![ADC measurment for IS_1](https://github.com/Infineon/Assets/blob/master/Pictures/ADC%20measurment%20for%20IS_1.png)
+##### Let’s add an ADC measurement for IS_1
+![ADC measurment for IS_1.2](https://github.com/Infineon/Assets/blob/master/Pictures/ADC%20measurment%20for%20IS_1.2.png)
 ##### Setup ADC App, rearranged, renamed to IS_1
 ![Setup ADC App_rearranged](https://github.com/Infineon/Assets/blob/master/Pictures/Setup%20ADC%20App_rearranged.png)
 ##### Let’s write some code
@@ -154,19 +154,19 @@ You take full responsibility if you choose to put anything on the end of the mot
 * IS_1 = A0 = P2.6
 * Right click on pin to select Signal
 ![Assign the HW Pins](https://github.com/Infineon/Assets/blob/master/Pictures/Assign%20the%20HW%20Pins.png)
-##### Generate DAVE Code then Build…
+##### Generate DAVE code then build…
 ![Generate DAVE Code](https://github.com/Infineon/Assets/blob/master/Pictures/Generate%20DAVE%20Code.png)
 ##### Launch Debugger and run code
-![Launch Debugger](https://github.com/Infineon/Assets/blob/master/Pictures/Launch%20Debugger.png)
+![Launch Debugger.2](https://github.com/Infineon/Assets/blob/master/Pictures/Launch%20Debugger.2.png)
 ##### Setup debug interface…(double click Segger)
-![Setup debug interface](https://github.com/Infineon/Assets/blob/master/Pictures/Setup%20debug%20interface.png)
+![Setup debug interface.2](https://github.com/Infineon/Assets/blob/master/Pictures/Setup%20debug%20interface.2.png)
 ##### Opens Debug Perspective – click run
-![Debug Perspective](https://github.com/Infineon/Assets/blob/master/Pictures/Debug%20Perspective.png)
+![Debug Perspective.2](https://github.com/Infineon/Assets/blob/master/Pictures/Debug%20Perspective.2.png)
 ##### Setup uC_Probe
 ![Setup uC_Probe.2](https://github.com/Infineon/Assets/blob/master/Pictures/Setup%20uC_Probe.2.png)
 ##### Point to DAVE Workspace .elf file
 ![Point to DAVE Workspace (2)](https://github.com/Infineon/Assets/blob/master/Pictures/Point%20to%20DAVE%20Workspace%20(2).png)
-##### Save your file (I use dave debug workspace)
+##### Save your file (I use DAVE debug workspace)
 ![Save file](https://github.com/Infineon/Assets/blob/master/Pictures/Save%20file.png)
 ##### Add a slider for IN_1 Duty Cycle - Drag and drop
 ![Add a slider for IN_1 Duty Cycle](https://github.com/Infineon/Assets/blob/master/Pictures/Add%20a%20slider%20for%20IN_1%20Duty%20Cycle.png)
@@ -179,7 +179,7 @@ You take full responsibility if you choose to put anything on the end of the mot
 ##### Add cool meter for Duty Cycle IN_1
 ![Add cool meter for Duty Cycle IN_1.2](https://github.com/Infineon/Assets/blob/master/Pictures/Add%20cool%20meter%20for%20Duty%20Cycle%20IN_1.2.png)
 ##### Repeat for Duty Cycle IN_2 (Copy widgets from IN_1, drag new Variable)
-![Add cool meter for Duty Cycle IN_2](https://github.com/Infineon/Assets/blob/master/Pictures/Add%20cool%20meter%20for%20Duty%20Cycle%20IN_2.png)
+![Add cool meter for Duty Cycle IN_2.2](https://github.com/Infineon/Assets/blob/master/Pictures/Add%20cool%20meter%20for%20Duty%20Cycle%20IN_2.2.png)
 ##### Run uC Probe (be sure DAVE Debug code is running)
 ![Run uC Probe.2](https://github.com/Infineon/Assets/blob/master/Pictures/Run%20uC%20Probe.2.png)
 ##### Left slider = Forward 
@@ -203,12 +203,12 @@ You take full responsibility if you choose to put anything on the end of the mot
   * We will only make changes to the Apps configuration
   * We will need to generate the new App code and rebuild
 ##### Modify the ADC (Stop the debugger, click DAVE CE perspective)
-![Modify ADC](https://github.com/Infineon/Assets/blob/master/Pictures/Modify%20ADC.png)
+![Modify the ADC](https://github.com/Infineon/Assets/blob/master/Pictures/Modify%20the%20ADC.png)
 ##### Modify PWM_CCU4 IN_1
-![Modify PWM_CCU4 IN_1](https://github.com/Infineon/Assets/blob/master/Pictures/Modify%20PWM_CCU4%20IN_1.png)
+![Modify PWM_CCU4 IN_1.3](https://github.com/Infineon/Assets/blob/master/Pictures/Modify%20PWM_CCU4%20IN_1.3.png)
 ![Modify PWM_CCU4 IN_1_2](https://github.com/Infineon/Assets/blob/master/Pictures/Modify%20PWM_CCU4%20IN_1_2.png)
 ##### Connect HW Signals (Right Click)
-![Connect HW Signals](https://github.com/Infineon/Assets/blob/master/Pictures/Connect%20HW%20Signals.png)
+![Connect HW Signals.2](https://github.com/Infineon/Assets/blob/master/Pictures/Connect%20HW%20Signals.2.png)
 ##### Configure IN_1
 ![Configure IN_1](https://github.com/Infineon/Assets/blob/master/Pictures/Configure%20IN_1.png)
 ##### Generate Code and Build; run Probe 
