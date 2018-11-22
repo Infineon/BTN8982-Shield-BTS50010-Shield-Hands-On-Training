@@ -44,11 +44,11 @@ You take full responsibility if you choose to put anything on the end of the mot
 
 ##### BTN8982 Shield Overview
 
-<img src="https://github.com/Infineon/Assets/blob/master/Pictures/BTN8982%20Shield%20Overview.png" width=700>
+<img src="https://github.com/Infineon/Assets/blob/master/Pictures/BTN8982%20Shield%20Overview.png" width=500>
 
 ##### BTN8982 Shield Pin Descriptions
 
-<img src="https://github.com/Infineon/Assets/blob/master/Pictures/BTN8982%20Shield%20Pin%20Descriptions.png" width=700>
+<img src="https://github.com/Infineon/Assets/blob/master/Pictures/BTN8982%20Shield%20Pin%20Descriptions.png" width=600>
 
 #### Arduino Bi-directional Motor Control Demonstration
 
@@ -69,7 +69,7 @@ You take full responsibility if you choose to put anything on the end of the mot
 
 ##### Arduino -> Tools -> Board: “xyz” -> Boards Manager
 
-<img src="https://github.com/Infineon/Assets/blob/master/Pictures/Arduino%20Boards%20Manager.2.png" width=600>
+<img src="https://github.com/Infineon/Assets/blob/master/Pictures/Arduino%20Boards%20Manager.2.png" width=500>
 
 ##### Arduino Board Manager -> “XMC” Search (Note: need network connection)
 
@@ -81,7 +81,7 @@ You take full responsibility if you choose to put anything on the end of the mot
 
 ##### Open the example Sketch
 
-![Example Sketch](https://github.com/Infineon/Assets/blob/master/Pictures/Example%20Sketch.png)
+<img src="https://github.com/Infineon/Assets/blob/master/Pictures/Example%20Sketch.png" width=600>
 
 ##### Verify Board and COM “XMC1100 Boot Kit”
 
@@ -117,7 +117,7 @@ You take full responsibility if you choose to put anything on the end of the mot
 
 ##### Closer look at the tool bar…
 
-<img src="https://github.com/Infineon/Assets/blob/master/Pictures/Tool%20bar.2.png" width=450>
+<img src="https://github.com/Infineon/Assets/blob/master/Pictures/Tool%20bar.2.png" width=500>
 
 ##### So what are we trying to do…
 
@@ -136,7 +136,7 @@ You take full responsibility if you choose to put anything on the end of the mot
 * In_x = 0; LSS is active 
 * IN_x = 1; HSS is active 
 
-![Truth Table_complete](https://github.com/Infineon/Assets/blob/master/Pictures/Truth%20Table_complete.png)
+<img src="https://github.com/Infineon/Assets/blob/master/Pictures/Truth%20Table_complete.png" width=500>
 
 ##### We have options…
 
@@ -153,17 +153,17 @@ You take full responsibility if you choose to put anything on the end of the mot
   
 ##### Setup DAVE App for INH_1
 
-![Setup DAVE App for INH_1.2](https://github.com/Infineon/Assets/blob/master/Pictures/Setup%20DAVE%20App%20for%20INH_1.2.png)
+<img src="https://github.com/Infineon/Assets/blob/master/Pictures/Setup%20DAVE%20App%20for%20INH_1.2.png" width=500>
 
 ##### Should see DIGITAL_IO App…double click it
 
-![DIGITAL_IO App](https://github.com/Infineon/Assets/blob/master/Pictures/DIGITAL_IO%20App.png)
+<img src="https://github.com/Infineon/Assets/blob/master/Pictures/DIGITAL_IO%20App.png" width=750>
 
 ##### Change name by right clicking app…
 
-![Change Name](https://github.com/Infineon/Assets/blob/master/Pictures/Change%20Name.png)
+<img src="https://github.com/Infineon/Assets/blob/master/Pictures/Change%20Name.png" width=350>
 
-![Change Name_2](https://github.com/Infineon/Assets/blob/master/Pictures/Change%20Name_2.png)
+<img src="https://github.com/Infineon/Assets/blob/master/Pictures/Change%20Name_2.png" width=350>
 
 ##### Should look like this… (Note we haven’t assigned pins yet…)
 
@@ -175,12 +175,12 @@ You take full responsibility if you choose to put anything on the end of the mot
   * Set as Input/Output
   * Set as High for Initial Output Level
   * Rename INH_2
-  
-![Repeat steps for INH_2.2](https://github.com/Infineon/Assets/blob/master/Pictures/Repeat%20steps%20for%20INH_2.2.png)
+
+<img src="https://github.com/Infineon/Assets/blob/master/Pictures/Repeat%20steps%20for%20INH_2.2.png" width=550>
 
 ##### Setup PWM for IN_1 Output Hmmm…2 different PWM options
 
-![Setup PWM for IN_1 Output.2](https://github.com/Infineon/Assets/blob/master/Pictures/Setup%20PWM%20for%20IN_1%20Output.2.png)
+<img src="https://github.com/Infineon/Assets/blob/master/Pictures/Setup%20PWM%20for%20IN_1%20Output.2.png" width=750>
 
 ##### Configure the App and Rename to IN_1
 
@@ -190,7 +190,7 @@ You take full responsibility if you choose to put anything on the end of the mot
 
 ##### Setup PWM for IN_2 - Using other PWM Function
 
-![Setup PWM for IN_2.4](https://github.com/Infineon/Assets/blob/master/Pictures/Setup%20PWM%20for%20IN_2.4.png)
+<img src="https://github.com/Infineon/Assets/blob/master/Pictures/Setup%20PWM%20for%20IN_2.4.png" width=900>
 
 ##### Configure App and rename to IN_2
 
@@ -227,7 +227,7 @@ You take full responsibility if you choose to put anything on the end of the mot
 ```
 ##### Where to put the 2 blocks of code…
 
-![2 Blocks of code.2](https://github.com/Infineon/Assets/blob/master/Pictures/2%20Blocks%20of%20code.2.png)
+<img src="https://github.com/Infineon/Assets/blob/master/Pictures/2%20Blocks%20of%20code.2.png" width=700>
 
 ##### Pin Mapping
 
@@ -242,7 +242,7 @@ You take full responsibility if you choose to put anything on the end of the mot
 * IS_1 = A0 = P2.6
 * Right click on pin to select Signal
 
-![Assign the HW Pins](https://github.com/Infineon/Assets/blob/master/Pictures/Assign%20the%20HW%20Pins.png)
+<img src="https://github.com/Infineon/Assets/blob/master/Pictures/Assign%20the%20HW%20Pins.png" width=600>
 
 ##### Generate DAVE code then build…
 
@@ -254,7 +254,7 @@ You take full responsibility if you choose to put anything on the end of the mot
 
 ##### Setup debug interface…(double click Segger)
 
-![Setup debug interface.2](https://github.com/Infineon/Assets/blob/master/Pictures/Setup%20debug%20interface.2.png)
+<img src="https://github.com/Infineon/Assets/blob/master/Pictures/Setup%20debug%20interface.2.png" width=700>
 
 ##### Opens Debug Perspective – click run
 
@@ -262,11 +262,11 @@ You take full responsibility if you choose to put anything on the end of the mot
 
 ##### Setup uC_Probe
 
-![Setup uC_Probe.2](https://github.com/Infineon/Assets/blob/master/Pictures/Setup%20uC_Probe.2.png)
+<img src="https://github.com/Infineon/Assets/blob/master/Pictures/Setup%20uC_Probe.2.png" width=700>
 
 ##### Point to DAVE Workspace .elf file
 
-![Point to DAVE Workspace (2)](https://github.com/Infineon/Assets/blob/master/Pictures/Point%20to%20DAVE%20Workspace%20(2).png)
+<img src="https://github.com/Infineon/Assets/blob/master/Pictures/Point%20to%20DAVE%20Workspace%20(2).png" width=700>
 
 ##### Save your file (I use DAVE debug workspace)
 
