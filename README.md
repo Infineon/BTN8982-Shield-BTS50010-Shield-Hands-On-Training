@@ -77,7 +77,7 @@ You take full responsibility if you choose to put anything on the end of the mot
 
 ##### Add BTN8982 Zip library
 
-![Add BTN8982 Zip library.2](https://github.com/Infineon/Assets/blob/master/Pictures/Add%20BTN8982%20Zip%20Library.2.png)
+<img src="https://github.com/Infineon/Assets/blob/master/Pictures/Add%20BTN8982%20Zip%20Library.2.png" width=450>
 
 ##### Open the example Sketch
 
@@ -85,23 +85,23 @@ You take full responsibility if you choose to put anything on the end of the mot
 
 ##### Verify Board and COM “XMC1100 Boot Kit”
 
-![Verify Board and COM “XMC1100 Boot Kit”](https://github.com/Infineon/Assets/blob/master/Pictures/Verify%20Board%20and%20COM%20XMC1100%20Boot%20Kit.png)
+<img src="https://github.com/Infineon/Assets/blob/master/Pictures/Verify%20Board%20and%20COM%20XMC1100%20Boot%20Kit.png" width=450>
 
 ##### Upload Sketch (Auto Compiles)
 
-![Upload Sketch](https://github.com/Infineon/Assets/blob/master/Pictures/Upload%20Sketch.png)
+<img src="https://github.com/Infineon/Assets/blob/master/Pictures/Upload%20Sketch.png" width=450>
 
 * Motor should spin up then down then reverse up then down
 
 ##### Bi-directional Arduino Code
 
-![Bi-directional Arduino Code](https://github.com/Infineon/Assets/blob/master/Pictures/Bi-directional%20Arduino%20Code.png)
+<img src="https://github.com/Infineon/Assets/blob/master/Pictures/Bi-directional%20Arduino%20Code.png" width=600>
 
 #### DAVE4 CE Project
 
 ##### Launch DAVE 4 – Assign a workspace
 
-![Assign a workspace](https://github.com/Infineon/Assets/blob/master/Pictures/Assign%20a%20workspace.png)
+<img src="https://github.com/Infineon/Assets/blob/master/Pictures/Assign%20a%20workspace.png" width=500>
 
 ##### Create a new DAVE CE Project
 
@@ -109,7 +109,7 @@ You take full responsibility if you choose to put anything on the end of the mot
 
 ##### Select XMC1100 Boot Kit
 
-![Select XMC1100 Boot Kit](https://github.com/Infineon/Assets/blob/master/Pictures/Select%20XMC1100%20Boot%20Kit.png )
+<img src="https://github.com/Infineon/Assets/blob/master/Pictures/Select%20XMC1100%20Boot%20Kit.png" width=450>
 
 ##### If all was successful go to DAVE IDE and Project…
 
@@ -117,7 +117,7 @@ You take full responsibility if you choose to put anything on the end of the mot
 
 ##### Closer look at the tool bar…
 
-![Tool bar.2](https://github.com/Infineon/Assets/blob/master/Pictures/Tool%20bar.2.png)
+<img src="https://github.com/Infineon/Assets/blob/master/Pictures/Tool%20bar.2.png" width=450>
 
 ##### So what are we trying to do…
 
@@ -127,8 +127,8 @@ You take full responsibility if you choose to put anything on the end of the mot
   * We can toggle the IN_x pin
 * We can also monitor the current in each half bridge 
   * IS_x Current Sense or Diagnostics 
-  
-![Pin definitions and functions.2](https://github.com/Infineon/Assets/blob/master/Pictures/Pin%20defintions%20and%20functions.2.png)
+
+<img src="https://github.com/Infineon/Assets/blob/master/Pictures/Pin%20defintions%20and%20functions.3.png" width=500>
 
 ##### BTN8982 Truth Table…
 
