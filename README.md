@@ -385,7 +385,7 @@ You take full responsibility if you choose to put anything on the end of the mot
 
 ##### BTS50010 Pin Descriptions 
 
-![BTS50010 Pin Descriptions](https://github.com/Infineon/Assets/blob/master/Pictures/BTS50010%20Pin%20Descriptions.png)
+<img src="https://github.com/Infineon/Assets/blob/master/Pictures/BTS50010%20Pin%20Descriptions.png" width=600>
 
 #### Arduino Blinky Bulb Demonstration
 
@@ -407,7 +407,7 @@ You take full responsibility if you choose to put anything on the end of the mot
 
 ##### Blinky Blub Code
 
-![Blinky Bulb Code](https://github.com/Infineon/Assets/blob/master/Pictures/Blinky%20Bulb%20Code.png)
+<img src="https://github.com/Infineon/Assets/blob/master/Pictures/Blinky%20Bulb%20Code.png" weidth=300>
 
 #### DAVE4 CE Project
 
