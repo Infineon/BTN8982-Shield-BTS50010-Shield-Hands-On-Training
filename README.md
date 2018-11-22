@@ -35,20 +35,20 @@ You take full responsibility if you choose to put anything on the end of the mot
   * Connect 12v GND to Shield GND
   * Connect 12v Power to Shield VBAT
   * Turn on supply (aka plug in supply)
-  
-![Hardware Overview](https://github.com/Infineon/Assets/blob/master/Pictures/Hardware%20Overview.png)
+
+<img src="https://github.com/Infineon/Assets/blob/master/Pictures/Hardware%20Overview.png" width=500>
 
 ##### XMC1100 Boot Kit Pin Descriptions
 
-![XMC1100 Boot Kit Pin Descriptions](https://github.com/Infineon/Assets/blob/master/Pictures/XMC1100%20Boot%20Kit%20Pin%20Descriptions.jpg)
+<img src="https://github.com/Infineon/Assets/blob/master/Pictures/XMC1100%20Boot%20Kit%20Pin%20Descriptions.jpg" width=700>
 
 ##### BTN8982 Shield Overview
 
-![BTN8982 Shield Overview](https://github.com/Infineon/Assets/blob/master/Pictures/BTN8982%20Shield%20Overview.png)
+<img src="https://github.com/Infineon/Assets/blob/master/Pictures/BTN8982%20Shield%20Overview.png" width=700>
 
 ##### BTN8982 Shield Pin Descriptions
 
-![BTN8982 Shield Pin Descriptions](https://github.com/Infineon/Assets/blob/master/Pictures/BTN8982%20Shield%20Pin%20Descriptions.png)
+<img src="https://github.com/Infineon/Assets/blob/master/Pictures/BTN8982%20Shield%20Pin%20Descriptions.png" width=700>
 
 #### Arduino Bi-directional Motor Control Demonstration
 
@@ -69,7 +69,7 @@ You take full responsibility if you choose to put anything on the end of the mot
 
 ##### Arduino -> Tools -> Board: “xyz” -> Boards Manager
 
-![Arduino Boards Manager](https://github.com/Infineon/Assets/blob/master/Pictures/Arduino%20Boards%20Manager.png)
+<img src="https://github.com/Infineon/Assets/blob/master/Pictures/Arduino%20Boards%20Manager.2.png" width=600>
 
 ##### Arduino Board Manager -> “XMC” Search (Note: need network connection)
 
