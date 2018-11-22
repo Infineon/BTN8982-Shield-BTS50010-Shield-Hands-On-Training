@@ -270,55 +270,55 @@ You take full responsibility if you choose to put anything on the end of the mot
 
 ##### Save your file (I use DAVE debug workspace)
 
-![Save file](https://github.com/Infineon/Assets/blob/master/Pictures/Save%20file.png)
+<img src="https://github.com/Infineon/Assets/blob/master/Pictures/Save%20file.png" width=700>
 
 ##### Add a slider for IN_1 Duty Cycle - Drag and drop
 
-![Add a slider for IN_1 Duty Cycle](https://github.com/Infineon/Assets/blob/master/Pictures/Add%20a%20slider%20for%20IN_1%20Duty%20Cycle.png)
+<img src="https://github.com/Infineon/Assets/blob/master/Pictures/Add%20a%20slider%20for%20IN_1%20Duty%20Cycle.png" width=700>
 
 ##### Configure the slider (0000 to 10000 are correct range for Duty Cycle)
 
-![Configure the slider](https://github.com/Infineon/Assets/blob/master/Pictures/Configure%20the%20slider.png)
+<img src="https://github.com/Infineon/Assets/blob/master/Pictures/Configure%20the%20slider.png" width=700>
 
 ##### Name (Drag text box and edit it)
 
-![Name (Drag text and edit it)](https://github.com/Infineon/Assets/blob/master/Pictures/Name%20%20(Drag%20text%20and%20edit%20it).png)
+<img src="https://github.com/Infineon/Assets/blob/master/Pictures/Name%20%20(Drag%20text%20and%20edit%20it).png" width=700>
 
 ##### Assign the Duty Cycle Variable to it (Drag and Drop over slider)
 
-![Assign the Duty Cycle Variable](https://github.com/Infineon/Assets/blob/master/Pictures/Assign%20the%20Duty%20Cycle%20Variable.png)
+<img src="https://github.com/Infineon/Assets/blob/master/Pictures/Assign%20the%20Duty%20Cycle%20Variable.png" width=800>
 
 ##### Add cool meter for Duty Cycle IN_1
 
-![Add cool meter for Duty Cycle IN_1.2](https://github.com/Infineon/Assets/blob/master/Pictures/Add%20cool%20meter%20for%20Duty%20Cycle%20IN_1.2.png)
+<img src="https://github.com/Infineon/Assets/blob/master/Pictures/Add%20cool%20meter%20for%20Duty%20Cycle%20IN_1.2.png" width=700>
 
 ##### Repeat for Duty Cycle IN_2 (Copy widgets from IN_1, drag new Variable)
 
-![Add cool meter for Duty Cycle IN_2.2](https://github.com/Infineon/Assets/blob/master/Pictures/Add%20cool%20meter%20for%20Duty%20Cycle%20IN_2.2.png)
+<img src="https://github.com/Infineon/Assets/blob/master/Pictures/Add%20cool%20meter%20for%20Duty%20Cycle%20IN_2.2.png" width=700>
 
 ##### Run uC Probe (be sure DAVE Debug code is running)
 
-![Run uC Probe.2](https://github.com/Infineon/Assets/blob/master/Pictures/Run%20uC%20Probe.2.png)
+<img src="https://github.com/Infineon/Assets/blob/master/Pictures/Run%20uC%20Probe.2.png" width=700>
 
 ##### Left slider = Forward 
 
 ##### Right slider = Reverse
 
-![Left slider = Forward Right slider = Reverse](https://github.com/Infineon/Assets/blob/master/Pictures/Left%20slider%20%3D%20Forward%20Right%20slider%20%3D%20Reverse.png)
+<img src="https://github.com/Infineon/Assets/blob/master/Pictures/Left%20slider%20%3D%20Forward%20Right%20slider%20%3D%20Reverse.png" width=700>
 
 ##### Add graph for IS_1 Signal (resize to fit)
 
-![Add graph for IS_1 signal](https://github.com/Infineon/Assets/blob/master/Pictures/Add%20graph%20for%20IS_1%20signal.png)
+<img src="https://github.com/Infineon/Assets/blob/master/Pictures/Add%20graph%20for%20IS_1%20signal.png" width=700>
 
 ##### Should look something like this... (Do not forget to save)
 
-![Pattern](https://github.com/Infineon/Assets/blob/master/Pictures/Pattern.png)
+<img src="https://github.com/Infineon/Assets/blob/master/Pictures/Pattern.png" width=700>
 
 ##### What´s up with the IS_1 singal???
 
 * If you look at the truth table...
 
-![Truth Table_IS_1 signal](https://github.com/Infineon/Assets/blob/master/Pictures/Truth%20Table_IS_1%20signal.png)
+<img src="https://github.com/Infineon/Assets/blob/master/Pictures/Truth%20Table_IS_1%20signal.png" width=500>
 
 * So only valid reading when HSS FET is high otherwise it’s an offset(Diagnostics)
 * Currently code just continuously makes IS_1 ADC conversion and is displaying in uC-Probe…
@@ -341,7 +341,7 @@ You take full responsibility if you choose to put anything on the end of the mot
 
 ![Modify PWM_CCU4 IN_1.3](https://github.com/Infineon/Assets/blob/master/Pictures/Modify%20PWM_CCU4%20IN_1.3.png)
 
-![Modify PWM_CCU4 IN_1_2](https://github.com/Infineon/Assets/blob/master/Pictures/Modify%20PWM_CCU4%20IN_1_2.png)
+<img src="https://github.com/Infineon/Assets/blob/master/Pictures/Modify%20PWM_CCU4%20IN_1_2.png" width=600>
 
 ##### Connect HW Signals (Right Click)
 
@@ -349,11 +349,11 @@ You take full responsibility if you choose to put anything on the end of the mot
 
 ##### Configure IN_1
 
-![Configure IN_1](https://github.com/Infineon/Assets/blob/master/Pictures/Configure%20IN_1.png)
+<img src="https://github.com/Infineon/Assets/blob/master/Pictures/Configure%20IN_1.png" width=600>
 
 ##### Generate Code and Build; run Probe 
 
-![Generate Code and Build](https://github.com/Infineon/Assets/blob/master/Pictures/Generate%20Code%20and%20Build.png)
+<img src="https://github.com/Infineon/Assets/blob/master/Pictures/Generate%20Code%20and%20Build.png" width=600>
 
 ### BTS50010 Shield Project
 
@@ -372,16 +372,16 @@ You take full responsibility if you choose to put anything on the end of the mot
   * Connect 12V GND to Shield GND 
   * Connect 12V Power to Shield VBAT 
   * Turn on supply (aka plug in supply)
-  
-![Hardware Overview BTS50010](https://github.com/Infineon/Assets/blob/master/Pictures/Hardware%20Overview%20BTS50010.png)
+
+<img src="https://github.com/Infineon/Assets/blob/master/Pictures/Hardware%20Overview%20BTS50010.png" width=500>
 
 ##### XMC1100 Boot Kit Pin Discriptions 
 
-![XMC1100 Boot Kit Pin Descriptions](https://github.com/Infineon/Assets/blob/master/Pictures/XMC1100%20Boot%20Kit%20Pin%20Descriptions.jpg)
+<img src="https://github.com/Infineon/Assets/blob/master/Pictures/XMC1100%20Boot%20Kit%20Pin%20Descriptions.jpg" width=700>
 
 ##### BTS50010 Shield Overview
 
-![BTS 50010 Shield Overview](https://github.com/Infineon/Assets/blob/master/Pictures/BTS%2050010%20Shield%20Overview.png)
+<img src="https://github.com/Infineon/Assets/blob/master/Pictures/BTS%2050010%20Shield%20Overview.png" width=500>
 
 ##### BTS50010 Pin Descriptions 
 
