@@ -9,18 +9,20 @@ You take full responsibility if you choose to put anything on the end of the mot
 
 ## Hands On Training Agenda
 
-* BTN8982 Shield Project
-* Hardware Overview
-* Arduino Bi-directional Motor Control Demonstration
-* DAVE4 CE Project
-* BTS50010 Shield Project
-* Hardware Overview
-* Arduino Blinky Bulb Demonstration
-* DAVE4 CE Project
+* [BTN8982 Shield Project](#BTN8982)
+* [Hardware Overview](#HardwareOverview)
+* [Arduino Bi-directional Motor Control Demonstration](#MotorControl)
+* [DAVE4 CE Project](#DAVE4)
+* [BTS50010 Shield Project](#BTS50010)
+* [Hardware Overview](#HardwareOverview2)
+* [Arduino Blinky Bulb Demonstration](#BlinkyBulb)
+* [DAVE4 CE Project](#DAVE4CE)
 
 ### BTN8982 Shield Project
+<a name="BTN8982"></a>
 
 #### Hardware Overview
+<a name="HardwareOverview"></a>
 
 * XMC1100 Boot Kit
 * BTN8982 Arduino Shield
@@ -51,6 +53,7 @@ You take full responsibility if you choose to put anything on the end of the mot
 <img src="https://github.com/Infineon/Assets/blob/master/Pictures/BTN8982%20Shield%20Pin%20Descriptions.png" width=600>
 
 #### Arduino Bi-directional Motor Control Demonstration
+<a name="MotorControl"></a>
 
 ##### Arduino UI Setup
 
@@ -98,6 +101,7 @@ You take full responsibility if you choose to put anything on the end of the mot
 <img src="https://github.com/Infineon/Assets/blob/master/Pictures/Bi-directional%20Arduino%20Code.png" width=600>
 
 #### DAVE4 CE Project
+<a name="DAVE4"></a>
 
 ##### Launch DAVE 4 – Assign a workspace
 
@@ -356,8 +360,10 @@ You take full responsibility if you choose to put anything on the end of the mot
 <img src="https://github.com/Infineon/Assets/blob/master/Pictures/Generate%20Code%20and%20Build.png" width=600>
 
 ### BTS50010 Shield Project
+<a name="BTS50010"></a>
 
 #### Hardware Overview 
+<a name="HardwareOverview2"></a>
 
 * XMC1100 Boot Kit
 * BTS50010 Arduino Shield 
@@ -388,6 +394,7 @@ You take full responsibility if you choose to put anything on the end of the mot
 <img src="https://github.com/Infineon/Assets/blob/master/Pictures/BTS50010%20Pin%20Descriptions.png" width=600>
 
 #### Arduino Blinky Bulb Demonstration
+<a name="BlinkyBulb"></a>
 
 ##### Arduino Blinky Bulb Demo
 
@@ -410,6 +417,7 @@ You take full responsibility if you choose to put anything on the end of the mot
 <img src="https://github.com/Infineon/Assets/blob/master/Pictures/Blinky%20Bulb%20Code.png" weidth=300>
 
 #### DAVE4 CE Project
+<a name="DAVE4CE"></a>
 
 ##### BTS50010 Shield DAVE Project
 
